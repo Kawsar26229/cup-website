@@ -57,6 +57,12 @@ a {
 
 .banner-link {
     padding: 1.5rem 0;
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.banner-link:hover {
+    transform: translateX(10px);
 }
 
 .link-btn {
@@ -67,7 +73,7 @@ a {
 }
 
 .link-btn:hover {
-    background-color: #f93535;
+    background-color: #f35656;
 }
 
 .fa-greater-than {
@@ -395,7 +401,7 @@ a {
     .matches {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     li.icon-item {
         margin-right: 20px;
     }
