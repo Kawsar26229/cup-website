@@ -209,6 +209,21 @@ a {
     margin-right: 3rem;
 }
 
+.link-show {
+    display: none;
+}
+
+.view-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.view-btn {
+    display: block;
+    text-align: center;
+}
+
 /*------------------------------
          Footer Styles 
 --------------------------------*/
@@ -276,6 +291,12 @@ a {
 /* ---------------
     Matches Styles
 ------------------ */
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
 .match {
     display: flex;
     flex-direction: column;
@@ -285,7 +306,7 @@ a {
 
 .flags {
     display: flex;
-    margin: 2rem;
+    margin: 3.4rem;
     align-items: center;
 }
 
@@ -308,6 +329,7 @@ a {
 .match-schedule {
     font-size: 1.8rem;
     color: #02050bc9;
+    margin-bottom: 4rem;
 }
 
 /* -------------------------------------
@@ -369,15 +391,23 @@ a {
         align-items: center;
     }
 
-    .blogs {
+    .blogs,
+    .matches {
         grid-template-columns: repeat(1, 1fr);
     }
+    
     li.icon-item {
         margin-right: 20px;
     }
+
+    .link-show {
+        display: none;
+    }
+
     .footer {
         min-width: 334px;
     }
+
     .footer-nav .footer-list {
         display: flex;
         flex-direction: column;
@@ -421,9 +451,15 @@ a {
         flex-direction: row;
     }
 
-    .blogs {
+    .blogs,
+    .matches {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .link-show {
+        display: block;
+    }
+
     .footer {
         min-width: 734px;
     }
