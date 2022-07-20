@@ -364,6 +364,9 @@ a {
 
     .banner-details {
         font-size: 1.4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .link-btn {
